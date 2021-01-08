@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">FarmZone</string>
+
+
+    <string-array name="cropType">
+        <item>Maize</item>
+        <item>Sorghum</item>
+        <item>Millet</item>
+        <item>Rice</item>
+        <item>Groudnnut</item>
+        <item>Yam</item>
+        <item>Tomato</item>
+        <item>Onion</item>
+        <item>Pepper</item>
+        <item>Potato</item>
+        <item>Tomatoes</item>
+        <item>Pepper</item>
+        <item>Lettuce</item>
+        <item>cabbage</item>
+        <item>Carrot</item>
+        <item>Eggplant</item>
+        <item>Cauliflower</item>
+        <item>Broccoli</item>
+        <item>Cucumber</item>
+        <item>Celery</item>
+    </string-array>
+
+    <string-array name="soilCondition">
+        <item>Normal soil conditions</item>
+        <item>Patchy Standing Water</item>
+        <item>Saturated - top 2 inches</item>
+        <item>Moist</item>
+        <item>Dry</item>
+        <item>Very Dry</item>
+    </string-array>
+
+    <string-array name="plantStage">
+        <item>gametophyte</item>
+        <item>sporophyte</item>
+    </string-array>
+
+    <string-array name="farmLocation">
+        <item>Jos-North</item>
+        <item>Jos-East</item>
+        <item>Jos-South</item>
+        <item>Bokkos</item>
+        <item>Kanam</item>
+        <item>Kanke</item>
+        <item>Pankshin</item>
+        <item>Mangu</item>
+        <item>Shendam</item>
+        <item>Langtang-North</item>
+        <item>Mikang</item>
+        <item>Wase</item>
+        <item>Quan-Pan</item>
+        <item>Riyom</item>
+        <item>Bassa</item>
+        <item>Barkin-Ladi</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Farm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="#3C9A92"
+        android:layout_height="match_parent"
+        android:padding="24dp"
+        android:orientation="vertical"
+        tools:context=".Farm">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textColor="#24DFCE"
+                android:textSize="24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Farm"/>
+
+            <TextView
+                android:textColor="#000"
+                android:textSize="24dp"
+                android:layout_marginLeft="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Zone"/>
+
+
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="10dp"
+            app:cardBackgroundColor="#287A9F"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:textColor="#4ADFD2"
+                        android:textSize="26dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="FarmName   "/>
+
+                    <TextView
+                        android:id="@+id/farmNames"
+                        android:textColor="#000"
+                        android:textSize="24dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_marginTop="12dp"
+            app:cardCornerRadius="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:padding="12dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="#000"
+                            android:layout_marginLeft="15dp"
+                            android:textSize="24dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fertilizer Program"/>
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:layout_marginLeft="230dp"
+                            android:src="@drawable/fertilize" />
+
+
+                        <EditText
+                            android:id="@+id/programName"
+                            android:layout_width="330dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/input_field"
+                            android:ems="10"
+                            android:drawableLeft="@drawable/fert"
+                            android:hint="Fertilizer Program Name"
+                            android:inputType="textPersonName"
+                            android:textColorHint="@color/blue"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.258" />
+
+                        <TextView
+                            android:textColor="#000"
+                            android:layout_marginTop="15dp"
+                            android:textSize="22dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:text="Where is your farm located? "/>
+
+                        <Spinner
+                            android:id="@+id/farmLocations"
+                            android:layout_width="330dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/input_field"
+                            android:ems="10"
+                            android:entries="@array/farmLocation"
+                            android:spinnerMode="dropdown"
+                            android:textColorHint="@color/blue"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.258" />
+
+
+
+
+
+                        <TextView
+                            android:textColor="#000"
+                            android:layout_marginTop="15dp"
+                            android:textSize="22dp"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_height="wrap_content"
+                            android:text="What type of crop is this? "/>
+
+                        <Spinner
+                            android:id="@+id/cropSpinner"
+                            android:layout_width="330dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/input_field"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:spinnerMode="dropdown"
+                            android:textColorHint="@color/blue"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.258" />
+
+                        <TextView
+                            android:textColor="#000"
+                            android:layout_marginTop="15dp"
+                            android:textSize="22dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Size of your Land (it should be in hectares) "/>
+
+
+
+                        <EditText
+                            android:id="@+id/landSize"
+                            android:layout_width="330dp"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginLeft="20dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/input_field"
+                            android:ems="10"
+                            android:inputType="textPersonName"
+                            android:textColorHint="@color/blue"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.258" />
+
+                        <Button
+                            android:id="@+id/generateButton"
+                            android:layout_width="162dp"
+                            android:layout_height="53dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/button"
+                            android:text="Generate"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.18"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                        <TextView
+                            android:id="@+id/fertTitle"
+                            android:textColor="#000"
+                            android:layout_marginTop="15dp"
+                            android:textSize="22dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fertilizer Ratio "/>
+
+
+                        <TextView
+                            android:id="@+id/N"
+                            android:textColor="#000"
+                            android:background="@drawable/input_field"
+                            android:textSize="24dp"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_width="330dp"
+                            android:layout_height="40dp"
+                            android:text=""/>
+
+                        <TextView
+                            android:id="@+id/valueofP"
+                            android:background="@drawable/input_field"
+                            android:textColor="#000"
+                            android:textSize="24dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_width="330dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_height="40dp"
+                            android:text=""/>
+                        <TextView
+                            android:id="@+id/valueofK"
+                            android:background="@drawable/input_field"
+                            android:textColor="#000"
+                            android:textSize="24dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_width="330dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_height="40dp"
+                            android:text=""/>
+
+
+
+
+                        <TextView
+                            android:id="@+id/DoseTitle"
+                            android:textColor="#000"
+                            android:layout_marginTop="15dp"
+                            android:textSize="22dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dose"/>
+
+                        <TextView
+                            android:id="@+id/dose"
+                            android:background="@drawable/input_field"
+                            android:textColor="#000"
+                            android:textSize="24dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_width="330dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_height="40dp"
+                            android:text=""/>
+
+                        <TextView
+                            android:id="@+id/method"
+                            android:textColor="#000"
+                            android:layout_marginTop="15dp"
+                            android:textSize="22dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Method of Application"/>
+
+                        <TextView
+                            android:id="@+id/methodOFapply"
+                            android:background="@drawable/input_field"
+                            android:textColor="#000"
+                            android:textSize="24dp"
+                            android:layout_marginLeft="4dp"
+                            android:layout_width="330dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_height="40dp"
+                            android:text=""/>
+
+
+
+
+
+
+                        <Button
+                            android:id="@+id/savebutton"
+                            android:layout_width="162dp"
+                            android:layout_height="53dp"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/button"
+                            android:text="Save"
+                            android:textAllCaps="false"
+                            android:textColor="@color/white"
+                            android:textSize="22sp"
+
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.18"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>
