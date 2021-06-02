@@ -46,7 +46,7 @@ public class Register extends AppCompatActivity {
         username = findViewById(R.id.Username);
         password = findViewById(R.id.Userpassword);
         cpassword = findViewById(R.id.editText23);
-        locationn = findViewById(R.id.locations);
+        //locationn = findViewById(R.id.locations);
         signUp = findViewById(R.id.registerbutton);
         login = findViewById(R.id.logbtn);
 
@@ -66,15 +66,15 @@ public class Register extends AppCompatActivity {
             public void onClick(View v) {
                 String usernamevalue = username.getText().toString();
                 String passwordvalue = password.getText().toString();
-                String locationvalue = locationn.getText().toString();
+                //String locationvalue = locationn.getText().toString();
                 String cpasswordvalue = cpassword.getText().toString();
 
 
-                if(usernamevalue.length()>1 && passwordvalue.equals(cpasswordvalue) && locationvalue.equals("Jos")) {
+                if(usernamevalue.length()>1 && passwordvalue.equals(cpasswordvalue)) {
                     SharedPreferences.Editor editor = preferences.edit();
                     editor.putString("username",usernamevalue);
                     editor.putString("password",passwordvalue);
-                    editor.putString("location",locationvalue);
+                    //editor.putString("location",locationvalue);
                     editor.apply();
                     Toast.makeText(Register.this,"You have been registered",Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getApplicationContext(),Login.class);
@@ -92,7 +92,7 @@ public class Register extends AppCompatActivity {
     public void emptyField(){
         username.setText("");
         password.setText("");
-        locationn.setText("");
+        //locationn.setText("");
     }
 
 
